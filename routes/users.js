@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var n=0;
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  n++;
+
+  res.send('User accesses are: '+n);
 });
 
 module.exports = router;
+
+
